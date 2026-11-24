@@ -1,0 +1,5 @@
+# Thư mục tải lên: chỉ phục vụ ảnh, không bao giờ chạy mã PHP (chống tải lên tệp độc hại)
+Options -Indexes -ExecCGI
+<FilesMatch "\.(php|phtml|phar|php[0-9]|pl|py|cgi)$">
+    Require all denied
+</FilesMatch>

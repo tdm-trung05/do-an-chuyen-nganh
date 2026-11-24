@@ -1,0 +1,15 @@
+# File cấu hình thật (chứa mật khẩu CSDL)
+config/config.php
+
+# File tải lên
+uploads/products/*
+uploads/news/*
+!uploads/products/.gitkeep
+!uploads/news/.gitkeep
+
+# Hệ thống
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

@@ -1,0 +1,2 @@
+# Không cho truy cập trực tiếp các file include
+Require all denied

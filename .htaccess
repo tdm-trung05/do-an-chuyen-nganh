@@ -1,0 +1,9 @@
+# Apache (WampServer): trang lỗi và bảo vệ thư mục nội bộ
+# Trang 404 không phụ thuộc tên thư mục cài đặt (đường dẫn tương đối với thư mục chứa .htaccess).
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ 404.php [L]
+</IfModule>
+Options -Indexes
